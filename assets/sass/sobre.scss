@@ -1,0 +1,34 @@
+.sobre--perfil {
+    display: flex;
+    align-items: center;
+
+    .sobre--perfil-avatar {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            border-radius: 50%;
+            max-width: 200px;
+        }
+    }
+    .sobre--perfil-desc {
+        flex: 4;
+        font-size: 20px;
+
+        .sobre--perfil-desc-lista {
+            list-style: none;
+            li:nth-child(1n + 1) {
+                margin-top: 15px;
+            }
+        }
+
+        .sobre--perfil-desc-skills {
+            display: flex;
+            flex-wrap: wrap;
+            > * {
+                margin: 25px;
+            }
+        }
+    }
+}

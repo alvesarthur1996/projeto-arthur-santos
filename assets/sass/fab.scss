@@ -1,0 +1,14 @@
+._fab {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+    .MuiButtonBase-root.MuiFab-root {
+        background-color: white;
+        color: black;
+        transition: 0.25s ease background-color;
+        &:hover{
+            background-color: darken(white, 8)
+        }
+    }
+}

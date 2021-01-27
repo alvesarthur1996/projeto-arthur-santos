@@ -9,11 +9,11 @@ export default function Navbar({ rotas }) {
             </div>
             <ul className="navbar--menu">
                 {
-                    rotas.map(el => {
+                    rotas.map((el,idx) => {
                         let nome = el.split("-").join(" ");
                         let rota = "/" + (el.toLowerCase() != "home" ? el : "");
                         return (
-                            <li className="navbar--menu-botao">
+                            <li key={idx} className="navbar--menu-botao">
                                 <a className="navbar--menu-botao-link" href={rota}>{nome}</a>
                             </li>
                         )

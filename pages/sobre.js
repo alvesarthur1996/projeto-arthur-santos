@@ -6,7 +6,7 @@ function Sobre() {
 
     return (
         <Fragment>
-            <div className="container">
+            <div className="container fade-in">
                 <div className="sobre--perfil">
                     <div className="sobre--perfil-avatar">
                         <img src="/lambo_maple_leafs_square.jpg" alt="Foto do desenvolvedor" />
@@ -20,17 +20,10 @@ function Sobre() {
                     </div>
                 </div>
             </div>
-            <div className="container">
+            <div className="container fade-in">
                 <div className="sobre--perfil">
-                    <div className="sobre--perfil-avatar">
-                        <Image
-                            src="/lambo_maple_leafs_square.jpg"
-                            alt="Foto do desenvolvedor"
-                            width={200}
-                            height={200}
-                        />
-                    </div>
-                    <div className="sobre--perfil-desc">
+                    
+                    <div className="sobre--perfil-desc img-right">
                         <h3 className="titulo">Fatos sobre mim</h3>
                         <ul className="sobre--perfil-desc-lista">
                             <li>
@@ -50,30 +43,37 @@ function Sobre() {
                             </li>
                         </ul>
                     </div>
+                    <div className="sobre--perfil-avatar">
+                        <img src="/playing_keyboard.jpg" alt="Foto do desenvolvedor" />
+                    </div>
                 </div>
             </div>
 
-            <div className="container">
+            <div className="container fade-in">
                 <div className="sobre--perfil">
                     <div className="sobre--perfil-avatar">
                         <img src="/lambo_maple_leafs_square.jpg" alt="Foto do desenvolvedor" />
                     </div>
                     <div className="sobre--perfil-desc">
-                        <h3 className="titulo">Skill Set</h3>
+                        <h3 className="titulo">Stacks</h3>
                         <div className="sobre--perfil-desc-skills">
-                            <ProgressBar skill="Javascript" lvl="90" />
-                            <ProgressBar skill="PHP" lvl="90" />
-                            <ProgressBar skill="CSS" lvl="90" />
-                            <ProgressBar skill="GIT" lvl="90" />
-                            <ProgressBar skill="MySql" lvl="90" />
-
-                            <ProgressBar skill="ReactJS" lvl="90" />
-                            <ProgressBar skill="NextJS" lvl="90" />
-                            <ProgressBar skill="Laravel" lvl="90" />
-                            <ProgressBar skill="CodeIgniter" lvl="90" />
+                            <div className="grupo-skills">
+                                <ProgressBar skill="Javascript" lvl="90" />
+                                <ProgressBar skill="PHP" lvl="90" />
+                                <ProgressBar skill="CSS" lvl="90" />
+                                <ProgressBar skill="GIT" lvl="70" />
+                                <ProgressBar skill="MySql" lvl="80" />
+                            </div>
+                            <div className="grupo-skills">
+                                <ProgressBar skill="ReactJS" lvl="75" />
+                                <ProgressBar skill="NextJS" lvl="75" />
+                                <ProgressBar skill="Laravel" lvl="70" />
+                                <ProgressBar skill="CodeIgniter" lvl="50" />
+                            </div>
                         </div>
                     </div>
                 </div>
+                <span style={{ textAlign: 'right', display: 'block' }}><i>* Medidas baseadas em unidades de INCRÍVEL</i></span>
             </div>
         </Fragment>
     )

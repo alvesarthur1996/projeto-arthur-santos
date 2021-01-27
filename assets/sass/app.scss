@@ -1,13 +1,24 @@
-@import 'navbar.scss';
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
 
-@import 'sobre.scss';
+/* Components */
+@import "navbar.scss";
+@import "fab.scss";
 
+/* Pages */
+@import "sobre.scss";
+
+/* Animations */
+@import "animations.scss";
+
+/* Default */
 body {
     background-image: linear-gradient(to bottom, #fff, #28e6e6);
     background-attachment: fixed;
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Yusei Magic", sans-serif;
 }
 
 .container {
@@ -18,8 +29,18 @@ body {
     margin: 1% auto;
     display: block;
     border-radius: 10px;
+    @media screen and (max-width: 768px) {
+        margin: 20px auto;
+    }
 }
 
 h3.titulo {
     font-size: 30px;
+}
+
+.floating-bg {
+    box-shadow: 1px 1px 10px 3px rgba(0, 186, 199, 0.4);
+    border-radius: 50%;
+    position: fixed;
+    z-index: -1;
 }
